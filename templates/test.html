@@ -26,7 +26,7 @@
                          {% if form.name.errors %}
                              {{ form.name(class="form-control is-invalid") }}
                              <div class="invalid-feedback">
-                                 {% for error in form.name.errors %}
+                                 {% for error in form.email.errors %}
                                      <span>{{ error }}</span>
                                  {% endfor %}
                              </div>
@@ -40,7 +40,7 @@
                          {% if form.mobile.errors %}
                              {{ form.mobile(class="form-control is-invalid") }}
                              <div class="invalid-feedback">
-                                 {% for error in form.mobile.errors %}
+                                 {% for error in form.email.errors %}
                                      <span>{{ error }}</span>
                                  {% endfor %}
                              </div>
@@ -91,7 +91,7 @@
 
                            {% endif %}
                        </div>
-                   <div class="form-group"> <!-- Button -->
+                   <div class="form-group">
                        {{ form.submit(class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2") }}
                    </div>
                    <div class="border-top pt-3">
