@@ -2,7 +2,7 @@
 <!-- Template inheritance -->
 {% block stylesheets %}
 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/login.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/login-registration.css') }}">
 
 {% endblock stylesheets %}
 
@@ -10,7 +10,9 @@
 
 <div class="container-fluid">
     <div class="row no-gutter">
-      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="d-none d-md-flex col-md-4 col-lg-6">
+        <img src="{{ url_for('static', filename='./assets/images/Brain.png') }}" class="img-fluid" alt="Responsive image">
+      </div>
       <div class="col-md-8 col-lg-6">
         <div class="login d-flex align-items-center py-5">
           <div class="container">

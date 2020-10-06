@@ -1,0 +1,9 @@
+Database
+//creating the database folder in the directory
+-> sqlite3 database.db
+-> .tables //shows all the tables
+-> .extt // exits the sqlite3
+
+In python console
+-> from <app.py> import db
+-> db.create_all() //creates the database in sqlite 

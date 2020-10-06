@@ -3,7 +3,7 @@
 
 {% block stylesheets %}
 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/registration.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/login-registration.css') }}">
 
 {% endblock stylesheets %}
 
@@ -13,7 +13,9 @@
 <!-- Registration Section -->
 <div class="content-fluid">
   <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+      <img src="{{ url_for('static', filename='./assets/images/Brain.png') }}" class="img-fluid" alt="Responsive image">
+    </div>
       <div class="col-md-8 col-lg-6">
         <div class="login d-flex align-items-center py-5">
           <div class="container">
@@ -26,7 +28,7 @@
                          {% if form.name.errors %}
                              {{ form.name(class="form-control is-invalid") }}
                              <div class="invalid-feedback">
-                                 {% for error in form.email.errors %}
+                                 {% for error in form.name.errors %}
                                      <span>{{ error }}</span>
                                  {% endfor %}
                              </div>
@@ -40,7 +42,7 @@
                          {% if form.mobile.errors %}
                              {{ form.mobile(class="form-control is-invalid") }}
                              <div class="invalid-feedback">
-                                 {% for error in form.email.errors %}
+                                 {% for error in form.mobile.errors %}
                                      <span>{{ error }}</span>
                                  {% endfor %}
                              </div>
@@ -91,7 +93,7 @@
 
                            {% endif %}
                        </div>
-                   <div class="form-group">
+                   <div class="form-group"> <!-- Button -->
                        {{ form.submit(class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2") }}
                    </div>
                    <div class="border-top pt-3">

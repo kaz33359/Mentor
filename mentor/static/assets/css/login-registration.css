@@ -9,7 +9,6 @@
   }
 
   .bg-image {
-    background-image: url('');
     background-size: cover;
     background-position: center;
   }
@@ -20,12 +19,13 @@
 
   body{
     margin:0px;
-    padding:120px 0px 0px 0px;
+    padding:125px 0px 0px 0px;
     z-index:0;
   }
 
   .btn-login {
     color:black;
+    background-color: #00CC83;
     font-size: 20px;
     padding: 10px 25px;
     margin-top: 15px;
