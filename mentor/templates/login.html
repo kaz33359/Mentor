@@ -7,6 +7,15 @@
 {% endblock stylesheets %}
 
 {% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
 
 <div class="container-fluid">
     <div class="row no-gutter">
@@ -54,7 +63,7 @@
                     {{ form.remember.label(class="form-check-label") }}
                   </div>
                   <div class="form-group"> <!-- Button -->
-                      {{ form.submit(class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2") }}
+                      {{ form.submit(class="btn btn-block btn-login text-uppercase font-weight-bold", style="padding:5px;") }}
                   </div>
                   <small class="text-muted ml-2">  <!-- Forgot Password -->
                     <a href="#">Forgot Password?</a>

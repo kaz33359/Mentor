@@ -9,8 +9,17 @@
 
 
 {% block content %}
-
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
 <!-- Registration Section -->
+
 <div class="content-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
@@ -93,14 +102,14 @@
 
                            {% endif %}
                        </div>
-                   <div class="form-group"> <!-- Button -->
-                       {{ form.submit(class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2") }}
-                   </div>
-                   <div class="border-top pt-3">
-                       <small class="text-muted">
-                           Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
-                       </small>
-                   </div>
+                       <div class="form-group"> <!-- Button -->
+                           {{ form.submit(class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2",style="padding:5px;"  ) }}
+                       </div>
+                       <div class="border-top pt-3">
+                           <small class="text-muted">
+                               Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+                           </small>
+                       </div>
                </form>
              </div>
             </div>
