@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+    padding:125px 0px 0px 0px;
+    z-index:0;
+  }
+
+ span{
+     color: black;
+ }
+ .card-title a{
+     text-decoration: none;
+ }

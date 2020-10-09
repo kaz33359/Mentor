@@ -1,0 +1,43 @@
+{% extends "dashboard_layout.html" %}
+<!-- Template inheritance -->
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %} {% endblock stylesheets %}
+
+<!-- Nav link block -->
+{% block dashboardNavLink %}
+  <li class="active"><a href="{{ url_for('dashboard_main') }}"> <i class="icon-home"></i>Home </a></li>
+  <li><a href="{{ url_for('dashboard_psychoTest') }}"> <i class="icon-padnote"></i>Psycho Test </a></li>
+  <li><a href="{{ url_for('dashboard_academics') }}"><i class="fa fa-bar-chart"></i>Academics </a></li>
+  <li><a href="{{ url_for('dashboard_carrer') }}"><i class="fa fa-bar-chart"></i>Carrer </a></li>
+  <li><a href="{{ url_for('dashboard_community') }}"> <i class="icon-padnote"></i>Community </a></li>
+  <li><a href="{{ url_for('dashboard_profile') }}"> <i class="icon-user"></i>Profile </a></li>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-content">
+  <div class="page-header no-margin-bottom">
+    <div class="container-fluid">
+      <h2 class="h5 no-margin-bottom">Dashboard</h2>
+    </div>
+  </div>
+</div>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+
+
+{% endblock content %}
+
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

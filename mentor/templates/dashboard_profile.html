@@ -1,0 +1,72 @@
+{% extends "dashboard_layout.html" %}
+<!-- Template inheritance -->
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/dashboard_css/dashboard_form.css') }}">
+{% endblock %}
+
+
+<!-- Nav link block -->
+{% block dashboardNavLink %}
+  <li><a href="{{ url_for('dashboard_main') }}"> <i class="icon-home"></i>Home </a></li>
+  <li><a href="{{ url_for('dashboard_psychoTest') }}"> <i class="icon-padnote"></i>Psycho Test </a></li>
+  <li><a href="{{ url_for('dashboard_academics') }}"><i class="fa fa-bar-chart"></i>Academics </a></li>
+  <li><a href="{{ url_for('dashboard_carrer') }}"><i class="fa fa-bar-chart"></i>Carrer </a></li>
+  <li><a href="{{ url_for('dashboard_community') }}"> <i class="icon-padnote"></i>Community </a></li>
+  <li class="active"><a href="{{ url_for('dashboard_profile') }}"> <i class="icon-user"></i>Profile </a></li>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-content">
+  <div class="page-header no-margin-bottom">
+    <div class="container-fluid">
+      <h2 class="h5 no-margin-bottom">User Profile</h2>
+    </div>
+  </div>
+<!-- Breadcrumb-->
+<div class="container-fluid">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+    <li class="breadcrumb-item active">User Profile </li>
+  </ul
+</div>
+<!-- Body Section -->
+<section class="no-padding-top">
+  <div class="container-fluid">
+    <div class="block">
+    <div class="row">
+      <div class="col">
+        <div class="user-block block text-center">
+          <div class="avatar"><img src="{{ image_file }}" alt="..." class="img-fluid">
+            </div><a href="#" class="user-title">
+              <h3 class="h5">{{ current_user.name }}</h3><span>{{ current_user.username }}</span></a>
+            </div>
+          </div>
+      <div class="col-sm-9">
+        <div class="form-group-material">
+          <input id="register-mobile" type="text" name="refisteredMobile" required class="input-material" value={{ current_user.mobile }} disabled>
+          <label for="register-mobile" class="label-material">Mobile</label>
+        </div>
+        <div class="form-group-material">
+          <input id="register-email" type="email" name="registerEmail" required class="input-material" value={{ current_user.email }} disabled>
+          <label for="register-email" class="label-material">Email Address</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="update" class="btn btn-primary" disabled>
+    </div>
+   </div
+  </div>
+ </section>
+</div>
+
+
+{% endblock %}
+
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

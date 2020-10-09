@@ -39,13 +39,10 @@
             <a class="navbar-brand">
                 <img class="logo" src="{{ url_for('static', filename='assets/images/Logo/Mentor.png') }}" alt="logo">
             </a>
-                    <ul class="navbar-nav d-flex justify-content-center">
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-                        <li class="nav-item "><a class="nav-link" href="{{ url_for('course') }}">Course</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
-                    </ul>
-                    <a class="btn get_started_Btn font-weight-bold" href="{{ url_for('login') }}" role="button">Get started</a>
+              <ul class="navbar-nav d-flex justify-content-center">
+                {% block homNavLink %}{% endblock %}
+              </ul>
+                <a class="btn get_started_Btn font-weight-bold" href="{{ url_for('login') }}" role="button">Get started</a>
             </div>
         </nav>
     </header><!-- End Header -->

@@ -1,13 +1,21 @@
 {% extends "layout.html" %}
 <!-- Template inheritance -->
 
+<!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}
-
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/login-registration.css') }}">
-
 {% endblock stylesheets %}
 
+<!-- Nav link block -->
+{% block homNavLink %}
+<li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+<li class="nav-item "><a class="nav-link" href="{{ url_for('course') }}">Course</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
+{% endblock %}
 
+
+<!-- Main Content block -->
 {% block content %}
 {% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}
@@ -44,6 +52,20 @@
                          {% else %}
                              {{ form.name(class="form-control", placeholder="Name") }}
                              {{ form.name.label() }}
+
+                         {% endif %}
+                     </div>
+                     <div class="form-label-group"> <!-- Name -->
+                         {% if form.username.errors %}
+                             {{ form.username(class="form-control is-invalid") }}
+                             <div class="invalid-feedback">
+                                 {% for error in form.username.errors %}
+                                     <span>{{ error }}</span>
+                                 {% endfor %}
+                             </div>
+                         {% else %}
+                             {{ form.username(class="form-control", placeholder="Name") }}
+                             {{ form.username.label() }}
 
                          {% endif %}
                      </div>
