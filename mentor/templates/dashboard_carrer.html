@@ -2,7 +2,20 @@
 <!-- Template inheritance -->
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/dashboard_css/dashboard_courses.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/cards.css') }}">
+
+{% endblock stylesheets %}
+
+<!-- course block -->
+{%block course%}
+
+<div class="list-inline-item logout">
+  <a id="logout" href="{{ url_for('dashboard_courses') }}" class="nav-link"> <span class="d-none d-sm-inline">Courses </span><i class="#"></i></a></div>
+
+{%endblock %}
+
 
 <!-- Nav link block -->
 {% block dashboardNavLink %}
@@ -10,6 +23,7 @@
   <li><a href="{{ url_for('dashboard_psychoTest') }}"> <i class="icon-padnote"></i>Psycho Test </a></li>
   <li><a href="{{ url_for('dashboard_academics') }}"><i class="fa fa-bar-chart"></i>Academics </a></li>
   <li class="active"><a href="{{ url_for('dashboard_carrer') }}"><i class="fa fa-bar-chart"></i>Carrer </a></li>
+  <li><a href="{{ url_for('dashboard_courses') }}"><i class="fa fa-bar-chart"></i>Courses </a></li>
   <li><a href="{{ url_for('dashboard_community') }}"> <i class="icon-padnote"></i>Community </a></li>
   <li><a href="{{ url_for('dashboard_profile') }}"> <i class="icon-user"></i>Profile </a></li>
 {% endblock %}
@@ -28,8 +42,123 @@
   <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
     <li class="breadcrumb-item active">Carrer </li>
-  </ul
+  </ul>
+  <!-- Personality code Section 6 -->
+  <div class="container-fluid">
+    <h1 class="font-weight-bold", style="color:white;">Personality</h1>
+    <p class="font-italic text-muted mb-4"> Personality </p>
+    <<div class="row">
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"><strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"><strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"> <strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"> <strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"> <strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0"> <strong class="font-weight-bold text-white">ASD </strong></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Recomendes Course Section 6 -->
+    <h1 class="font-weight-bold", style="color:white;">Recomended Course</h1>
+    <p class="font-italic text-muted mb-4">Select a Course </p>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+          <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+            <div class="hover-overlay"></div>
+            <div class="hover-1-content px-5 py-4">
+              <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+              <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+              <div class="hover-overlay"></div>
+              <div class="hover-1-content px-5 py-4">
+                <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+              <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+                <div class="hover-overlay"></div>
+                <div class="hover-1-content px-5 py-4">
+                  <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                  <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-1-content px-5 py-4">
+                    <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                    <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                  <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+                      <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                      <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+                      <div class="hover-overlay"></div>
+                      <div class="hover-1-content px-5 py-4">
+                        <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                        <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    </div>
 </div>
+
 
 {% endblock %}
 

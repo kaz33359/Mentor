@@ -1,0 +1,47 @@
+{% extends "home_layout.html" %}
+<!-- Template inheritance -->
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/news.css') }}">
+{% endblock stylesheets %}
+
+
+<!-- Nav link block -->
+{% block homNavLink %}
+<li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+<li class="nav-item "><a class="nav-link" href="{{ url_for('departments') }}">Course</a></li>
+<li class="nav-item active"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
+{% endblock %}
+
+<!-- Main Content block -->
+{% block content %}
+ <!-- Page Content -->
+ <div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4">News</h1>
+
+    <!-- Project One -->
+    <div class="row">
+      {% for new, des, i, url in context %}
+      <div class="col-md-7">
+        <img class="img-fluid rounded mb-3 mb-md-4" src="{{i}}" alt="">
+      </div>
+      <div class="col-md-5">
+        <h3>{{new}}</h3><br>
+        <p>{{des}}</p>
+        <a class="btn btn-primary" href="{{url}}">Read More</a>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- /.row -->
+    <hr>
+
+
+  </div>
+  <!-- /.container -->
+
+
+{% endblock content %}

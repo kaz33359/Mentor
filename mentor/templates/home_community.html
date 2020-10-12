@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "home_layout.html" %}
 <!-- Template inheritance -->
 
 <!-- Specific Page CSS goes HERE  -->
@@ -10,7 +10,7 @@
 <!-- Nav link block -->
 {% block homNavLink %}
 <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-<li class="nav-item "><a class="nav-link" href="{{ url_for('course') }}">Course</a></li>
+<li class="nav-item "><a class="nav-link" href="{{ url_for('departments') }}">Course</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
 <li class="nav-item active"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
 {% endblock %}

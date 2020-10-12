@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "home_layout.html" %}
 <!-- Template inheritance -->
 
 
@@ -11,7 +11,7 @@
 <!-- Nav link block -->
 {% block homNavLink %}
 <li class="nav-item active"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-<li class="nav-item "><a class="nav-link" href="{{ url_for('course') }}">Course</a></li>
+<li class="nav-item "><a class="nav-link" href="{{ url_for('departments') }}">Course</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
 {% endblock %}
@@ -89,36 +89,18 @@
   <!---News Section-->
   <div class="container ">
       <div class="row news">
+        {% for new, des, i, url in context %}
           <div class=" col-sm">
               <div class="card bg-dark" >
-                  <img class="card-img-top" src="http://placehold.it/700x400" alt="Card image cap">
+                  <img class="card-img-top" src="{{i}}" alt="Card image cap">
                   <div class="card-body">
-                      <h5 class="card-title">Headline</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Readmore</a>
+                      <h5 class="card-title">{{new}}</h5>
+                    <p class="card-text">{{des}}</p>
+                    <a href="{{url}}" class="card-link">Readmore</a>
                   </div>
                 </div>
           </div>
-          <div class=" col-sm">
-              <div class="card bg-dark">
-                <img class="card-img-top" src="http://placehold.it/700x400" alt="Card image cap">
-                <div class="card-body">
-                      <h5 class="card-title">Headline</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Readmore</a>
-                  </div>
-                </div>
-          </div>
-          <div class=" col-sm">
-              <div class="card bg-dark" >
-                <img class="card-img-top" src="http://placehold.it/700x400" alt="Card image cap">
-                <div class="card-body">
-                      <h5 class="card-title">Headline</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Readmore</a>
-                  </div>
-                </div>
-          </div>
+          {% endfor %}
       </div>
   </div>
   <!---Counter Section-->

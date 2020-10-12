@@ -8,3 +8,28 @@
     <h1>Test</h1>
   </body>
 </html>
+
+
+<div class="col-lg-12">
+  <div class="block">
+    {% for i in questions %}
+   <div class="block-body">
+    <form action='/test' method='POST'>
+      <div class="form-group">
+        <div class="title"><strong class="d-block">{{i}}</strong></div>
+        {% for j in questions[i] %}
+        <div class="form-group row">
+        <div class="col-sm-9">
+         <div class="i-checks-inline" >
+          <input id="radioCustom1" type="radio" value="option1" name="a" class="radio-template">
+          <label for="radioCustom1"value="option1" name="a"></label>{{j}}
+         </div>
+       </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </form>
+</div>
+</div>
+</div>

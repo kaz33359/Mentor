@@ -4,9 +4,31 @@ body{
     z-index:0;
   }
 
- span{
-     color: black;
- }
- .card-title a{
-     text-decoration: none;
- }
+  .card-title a{
+    text-decoration: none;
+}
+.breadcrumb {
+  background: none;
+  padding: 20px 20px;
+  margin-bottom: 0;
+  color: #8a8d93;
+}
+
+.breadcrumb a {
+  color: #429244;
+  text-decoration: none !important;
+}
+
+.breadcrumb li.active {
+  color: #585a5f;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #585a5f;
+}
+
+
+.h3 a {
+  text-decoration: none !important;
+
+}

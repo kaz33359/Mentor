@@ -1,0 +1,97 @@
+{% extends "home_layout.html" %}
+<!-- Template inheritance -->
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/courses.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/cards.css') }}">
+
+{% endblock stylesheets %}
+
+
+<!-- Nav link block -->
+{% block homNavLink %}
+<li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+<li class="nav-item active "><a class="nav-link" href="{{ url_for('departments') }}">Course</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ url_for('community') }}">Community</a></li>
+{% endblock %}
+
+<!-- Template inheritance -->
+{% block content %}
+
+ <!-- Page Content -->
+<div class="container">
+{% for course in courses %}
+  <!-- Course Heading -->
+ <h1 class="my-4">{{ course.Cource }}</h1>
+ <!-- breadcrumb -->
+ <div class="container-fluid">
+   <ul class="breadcrumb">
+     <li class="breadcrumb-item"><a href="{{ url_for('departments') }}">Department</a></li>
+     <li class="breadcrumb-item active">Course</li>
+     <li class="breadcrumb-item active"> Course Details</li>
+   </ul>
+ </div>
+ <!-- Course Description -->
+ <div class="row">
+   <div class="col-md-8 ">
+     <img class="img-fluid rounded" src="{{course.img_url}}" alt="">
+   </div>
+
+   <div class="col-md-4">
+     <h3 class="my-3">Course Description</h3>
+     <p>{{ course.Description }}</p>
+     <h3 class="my-3">Course Details</h3>
+     <ul>
+       <li>Lorem Ipsum</li>
+       <li>Dolor Sit Amet</li>
+       <li>Consectetur</li>
+       <li>Adipiscing Elit</li>
+     </ul>
+   </div>
+ </div>
+ <!-- /.row -->
+ {% endfor %}
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Similer Courses</h3>
+    <div class="row">
+      <div class="col-lg-3 mb-4  ">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Course 1 <strong class="font-weight-bold text-white"> </strong><span></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4  ">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Course 2 <strong class="font-weight-bold text-white"> </strong><span></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4  ">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Course 3 <strong class="font-weight-bold text-white"> </strong><span></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4  ">
+        <div class="hover hover-5 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786269/hoverSet-10_ccl30n.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-5-content">
+            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Course 4 <strong class="font-weight-bold text-white"> </strong><span></span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+{% endblock content %}

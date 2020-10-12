@@ -1,0 +1,84 @@
+{% extends "dashboard_layout.html" %}
+<!-- Template inheritance -->
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/dashboard_css/dashboard_courses.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/cards.css') }}">
+
+{% endblock stylesheets %}
+
+
+<!-- course block -->
+{%block course%}
+
+<div class="list-inline-item course active">
+  <a id="logout" href="{{ url_for('dashboard_courses') }}" class="nav-link active"> <span class="d-none d-sm-inline active">Courses </span><i class="#"></i></a></div>
+
+{%endblock %}
+
+<!-- Nav link block -->
+{% block dashboardNavLink %}
+  <li><a href="{{ url_for('dashboard_main') }}"> <i class="icon-home"></i>Home </a></li>
+  <li><a href="{{ url_for('dashboard_psychoTest') }}"> <i class="icon-padnote"></i>Psycho Test </a></li>
+  <li><a href="{{ url_for('dashboard_academics') }}"><i class="fa fa-bar-chart"></i>Academics </a></li>
+  <li><a href="{{ url_for('dashboard_carrer') }}"><i class="fa fa-bar-chart"></i>Carrer </a></li>
+  <li class="active"><a href="{{ url_for('dashboard_courses') }}"><i class="fa fa-bar-chart"></i>Courses </a></li>
+  <li><a href="{{ url_for('dashboard_community') }}"> <i class="icon-padnote"></i>Community </a></li>
+  <li><a href="{{ url_for('dashboard_profile') }}"> <i class="icon-user"></i>Profile </a></li>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-content">
+  <div class="page-header no-margin-bottom">
+    <div class="container-fluid">
+      <h2 class="h5 no-margin-bottom">Course</h2>
+    </div>
+  </div>
+<!-- Breadcrumb-->
+  <div class="container-fluid">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+      <li class="breadcrumb-item active">Course </li>
+    </ul
+  </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-lg-4 mb-4">
+      <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-1-content px-5 py-4">
+          <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-1-content px-5 py-4">
+            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+            <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+          <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
+            <div class="hover-overlay"></div>
+            <div class="hover-1-content px-5 py-4">
+              <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+              <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

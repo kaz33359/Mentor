@@ -7,3 +7,4 @@ Database
 In python console
 -> from <app.py> import db
 -> db.create_all() //creates the database in sqlite 
+-> db.drop_all()
