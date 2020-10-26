@@ -2,7 +2,9 @@
 <!-- Template inheritance -->
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/dashboard_css/dashboard_form.css') }}">
+{% endblock %}
 
 {% block dashboardNavLink %}
   <li><a href="{{ url_for('dashboard_main') }}"> <i class="icon-home"></i>Home </a></li>
@@ -23,13 +25,207 @@
       <h2 class="h5 no-margin-bottom">Academics</h2>
     </div>
   </div>
-<!-- Breadcrumb-->
-<div class="container-fluid">
-  <ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-    <li class="breadcrumb-item active">Academics </li>
-  </ul
+  <!-- Breadcrumb-->
+  <div class="container-fluid">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+      <li class="breadcrumb-item active">Academics </li>
+    </ul
+  </div>
+  <p class="font-italic text-muted mb-3">*Fill only Applicable</p>
+  <!--10th-->
+  <div class="col-lg-12">
+   <div class="block">
+    <div class="block-body">
+     <form>
+      <div class="form-group">
+       <div class="title"><strong class="d-block">10th</strong></div>
+       <p class="font-italic text-muted mb-2"> SSLC / Secondary school  </p>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label">Enter Final Precentage</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Eg: 65%" class="form-control">
+       </div>
+      </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!--10th End-->
+  <!--11th -->
+  <div class="col-lg-12">
+   <div class="block">
+    <div class="block-body">
+     <form>
+      <div class="form-group">
+       <div class="title"><strong class="d-block">11th</strong></div>
+       <p class="font-italic text-muted mb-4"> Higher secondary </p>
+       <div class="form-group row">
+        <label class="col-sm-3 form-control-label">Stream</label>
+        <div class="col-sm-9">
+         <select name="account" class="form-control mb-3 mb-3">
+          <option>Select  </option>
+          <option>Science</option>
+          <option>Commerce</option>
+          <option>Arts/Humanities</option>
+         </select>
+        </div>
+       </div>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label">Enter Final Precentage</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Eg: 65%" class="form-control">
+       </div>
+      </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!--11th 1 End-->
+  <!--12th 1-->
+  <div class="col-lg-12">
+   <div class="block">
+    <div class="block-body">
+     <form>
+      <div class="form-group">
+       <div class="title"><strong class="d-block">12th</strong></div>
+       <p class="font-italic text-muted mb-4"> Higher secondary </p>
+       <div class="form-group row">
+        <label class="col-sm-3 form-control-label">Stream</label>
+        <div class="col-sm-9">
+         <select name="account" class="form-control mb-3 mb-3">
+          <option>Select  </option>
+          <option>Science</option>
+          <option>Commerce</option>
+          <option>Arts/Humanities</option>
+         </select>
+        </div>
+       </div>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label">Enter Final Precentage</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Eg: 65%" class="form-control">
+       </div>
+      </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!--12th End-->
+  <!--UG 1-->
+  <div class="col-lg-12">
+   <div class="block">
+    <div class="block-body">
+     <form>
+      <div class="form-group">
+       <div class="title"><strong class="d-block">Under Graduate Degree</strong></div>
+       <p class="font-italic text-muted mb-4"> </p>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label">Course Name</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Bachelors in" class="form-control">
+       </div>
+      </div>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label">Semister  Persentage</label>
+         <div class="col-sm-9">
+           <div class="row">
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 1" class="form-control">
+             </div>
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 2" class="form-control">
+             </div>
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 3" class="form-control">
+             </div>
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 4" class="form-control">
+             </div>
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 5" class="form-control">
+             </div>
+             <div class="col-md-2">
+               <input type="text" placeholder="Semister 6" class="form-control">
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="form-group row">
+       <label class="col-sm-3 form-control-label"> Final Precentage</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Eg: 65%" class="form-control">
+       </div>
+      </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!--UG End-->
+  <!--PG 1-->
+  <div class="col-lg-12">
+   <div class="block">
+    <div class="block-body">
+     <form>
+      <div class="form-group">
+       <div class="title"><strong class="d-block">Post Graduate Degree</strong></div>
+       <p class="font-italic text-muted mb-4"> </p>
+      </div>
+      <div class="form-group row">
+      <label class="col-sm-3 form-control-label">Course Name</label>
+       <div class="col-sm-9">
+        <input type="text" placeholder="Masters in" class="form-control">
+       </div>
+      </div>
+      <div class="form-group row">
+      <label class="col-sm-3 form-control-label">Semister Persentage</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 1" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 2" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 3" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 4" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 5" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <input type="text" placeholder="Semister 6" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-3 form-control-label">Final Precentage</label>
+      <div class="col-sm-9">
+       <input type="Text" placeholder="Eg: 65%" class="form-control">
+      </div>
+     </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!--PG End-->
+
+  <!-- Submit Button -->
+  <div class="form-group">
+   <input type="submit" value="Submit" class="btn btn-primary">
+  </div>
+  <!-- Submit Button End-->
 </div>
+
+
 
 {% endblock %}
 

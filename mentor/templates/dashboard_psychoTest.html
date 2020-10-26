@@ -41,25 +41,22 @@
 <!-- Question 1 -->
 {% for i in questions %}
 <div class="col-lg-12">
-  <div class="col-lg-12">
     <div class="block">
      <div class="block-body">
-      <form action='/test' method='POST'>
+      <form action='/dashboard_psychoTest' method='POST'>
         <div class="form-group">
           <div class="title"><strong class="d-block">{{i}}</strong></div>
           {% for j in questions[i] %}
           <div class="form-group row">
           <div class="col-sm-9">
            <div class="i-checks-inline" >
-            <input id="radioCustom1" type="radio" value="option1" name="a" class="radio-template">
+            <input id="radioCustom1" type="radio" value="{{j}}" name="{{i}}" class="radio-template">
             <label for="radioCustom1"value="option1" name="a"></label>{{j}}
            </div>
          </div>
         </div>
         {% endfor %}
       </div>
-    </form>
-  </div>
   </div>
   </div>
   </div>
@@ -70,6 +67,8 @@
   <div class="form-group">
     <input type="submit" value="Submit" class="btn btn-primary">
   </div>
+
+</form>
 <!-- Submit Button End-->
    </div>
   </div>

@@ -21,19 +21,14 @@
 <div class="page-content">
   <div class="page-header no-margin-bottom">
     <div class="container-fluid">
-      <h2 class="h5 no-margin-bottom">Dashboard</h2>
+      <h2 class="h5 no-margin-bottom">Home</h2>
     </div>
   </div>
-</div>
-{% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-    {% for category, message in messages %}
-      <div class="alert alert-{{ category }}">
-        {{ message }}
-      </div>
-    {% endfor %}
-  {% endif %}
-{% endwith %}
+  <div class="container-fluid">
+    <h1 class="font-weight-bold", style="color:white;">Welcome.. {{ current_user.name }}</h1>
+    <p class="font-italic text-muted mb-4">  </p>
+  </div>
+  </div>
 
 
 

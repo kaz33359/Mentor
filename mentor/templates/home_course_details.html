@@ -25,7 +25,8 @@
 <div class="container">
 {% for course in courses %}
   <!-- Course Heading -->
- <h1 class="my-4">{{ course.Cource }}</h1>
+ <h1 class="my-4">{{ course.Course_short}}</h1>
+ <h2 class="my-4">{{ course.Course_full}}</h2>
  <!-- breadcrumb -->
  <div class="container-fluid">
    <ul class="breadcrumb">
@@ -36,20 +37,21 @@
  </div>
  <!-- Course Description -->
  <div class="row">
-   <div class="col-md-8 ">
+   <div class="col-md-7">
      <img class="img-fluid rounded" src="{{course.img_url}}" alt="">
    </div>
 
-   <div class="col-md-4">
+   <div class="col-md-5">
      <h3 class="my-3">Course Description</h3>
      <p>{{ course.Description }}</p>
-     <h3 class="my-3">Course Details</h3>
+     <a class="mb-4 btn btn-primary" href="{{ course.Course_url}}">Know More</a>
      <ul>
-       <li>Lorem Ipsum</li>
-       <li>Dolor Sit Amet</li>
-       <li>Consectetur</li>
-       <li>Adipiscing Elit</li>
+       <li>{{ course.College_name }}</li>
+       <li>{{ course.City}}</li>
+       <li>{{ course.State}}</li>
+       <li><a href="{{ course.College_URL}}">{{course.College_URL}}</a></li>
      </ul>
+
    </div>
  </div>
  <!-- /.row -->

@@ -1,31 +1,31 @@
 Department,dep_url
-Computer Science,/static/assets/images/Department_Images/dep_1.jpeg
-Mathematics,/static/assets/images/Department_Images/dep_2.jpeg
-Statistics,/static/assets/images/Department_Images/dep_3.jpg
-Business Management,/static/assets/images/Department_Images/dep_4.jpeg
-School of Law,/static/assets/images/Department_Images/dep_5.jpeg
-Allied Health Care,/static/assets/images/Department_Images/dep_6.jpeg
-Arts and Humanities,/static/assets/images/Department_Images/dep_7.jpeg
-Chemistry,/static/assets/images/Department_Images/dep_8.jpeg
-Civil Engineering,/static/assets/images/Department_Images/dep_9.jpeg
-Electrical and Electronics,/static/assets/images/Department_Images/dep_10.jpeg
-Computer Science and Engineering,/static/assets/images/Department_Images/dep_11.jpeg
-Economics,/static/assets/images/Department_Images/dep_12.jpeg
-Hotel Management,/static/assets/images/Department_Images/dep_13.jpeg
-Electronics & Communication,/static/assets/images/Department_Images/dep_14.jpeg
-English,/static/assets/images/Department_Images/dep_15.jpeg
-Life Sciences,/static/assets/images/Department_Images/dep_16.jpeg
-"International Studies, Political Science and History",/static/assets/images/Department_Images/dep_17.jpeg
-Media Studies,/static/assets/images/Department_Images/dep_18.jpeg
-Mechanical and Automobile Engineering,/static/assets/images/Department_Images/dep_19.jpeg
-"Performing Arts, Theatre Studies and Music",/static/assets/images/Department_Images/dep_20.jpeg
-Philosophy and Theology,/static/assets/images/Department_Images/dep_21.jpeg
-Physics and Electronics,/static/assets/images/Department_Images/dep_22.jpeg
-Professional Studies,/static/assets/images/Department_Images/dep_23.jpg
-Psychology,/static/assets/images/Department_Images/dep_24.jpeg
-Architecture,/static/assets/images/Department_Images/dep_25.jpeg
-School of Education,/static/assets/images/Department_Images/dep_26.jpeg
-Tourism Management,/static/assets/images/Department_Images/dep_27.jpeg
-Sociology and Social Work,/static/assets/images/Department_Images/dep_28.jpeg
-Commerce,/static/assets/images/Department_Images/dep_29.png
-Vocational Studies,/static/assets/images/Department_Images/dep_30.jpeg
+Computer Science,https://images.unsplash.com/photo-1520509414578-d9cbf09933a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=649&q=80
+Mathematics,https://images.unsplash.com/photo-1503789101408-444b37749472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80
+Statistics,https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Business Management,https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
+School of Law,https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Allied Health Care,https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80
+Arts and Humanities,https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Chemistry,https://images.unsplash.com/photo-1561328399-f94d2ce78679?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Civil Engineering,https://images.unsplash.com/photo-1501470877489-8e53c465f30d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=635&q=80
+Electrical and Electronics,https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Computer Science and Engineering,https://images.unsplash.com/photo-1580432522609-d073f3f4b4f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=937&q=80
+Economics,https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+Hotel Management,https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80
+Electronics & Communication,https://images.unsplash.com/photo-1592919347498-69564e361791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+English,https://images.unsplash.com/photo-1543165796-5426273eaab3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Life Sciences,https://images.unsplash.com/photo-1437813865984-32f38e58daea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+"International Studies, Political Science and History",https://images.unsplash.com/photo-1489421471208-251cc68284b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
+Media Studies,https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80
+Mechanical and Automobile Engineering,https://images.unsplash.com/photo-1558486799-4ec09fdb129c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1080&q=80
+"Performing Arts, Theatre Studies and Music",https://images.unsplash.com/photo-1506780789966-15774276e069?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1076&q=80
+Philosophy and Theology,https://images.unsplash.com/photo-1593240637899-5fc06c754c2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80
+Physics and Electronics,https://images.unsplash.com/photo-1567664883526-8f401f277a27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1015&q=80
+Professional Studies,https://images.unsplash.com/photo-1497681883844-82b4f0a359a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Psychology,https://images.unsplash.com/photo-1593444286621-98245b7d4530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Architecture,https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
+School of Education,https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80
+Tourism Management,https://images.unsplash.com/photo-1511843511279-cfd764c09659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80
+Sociology and Social Work,https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+Commerce,https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+Vocational Studies,https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80

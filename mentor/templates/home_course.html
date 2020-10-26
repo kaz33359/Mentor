@@ -33,16 +33,17 @@
   <div class="row">
       {% for course in courses %}
     <div class="col-lg-4 mb-4">
-        <div class="hover hover-1 text-white rounded"><img src="{{course.img_url}}" alt="">
+      <a href="{{ url_for('course_details', course=course.Course_short) }}">
+        <div class="hover hover-1 text-white rounded">
+          <img src="{{course.img_url}}" alt="">
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
-            <h3 class="hover-1-title font-weight-light  card-title mb-0">
-              <a href="{{ url_for('course_details', course=course.Cource) }}">{{ course.Cource }}</a>
-            </h3>
-            <p class="hover-1-description font-weight-light mb-0"></p>
+            <h3 class="hover-1-title font-weight-bold  card-title mb-0">{{ course.Course_short }}</h3>
+            <p class="hover-1-description font-weight-light mb-0">{{ course.Course_full  }}</p>
           </div>
         </div>
-      </div>
+      </a>
+    </div>
     {% endfor %}
 
 </div>

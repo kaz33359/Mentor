@@ -17,4 +17,4 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(60), nullable=False)
 
     def __repr__(self):
-            return f"Post('{self.name}', '{self.email}', '{self.image_file}')"
+            return f"User('{self.name}', '{self.email}', '{self.image_file}')"
